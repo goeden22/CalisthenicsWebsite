@@ -1,0 +1,33 @@
+.header {
+  font-family: "Montserrat";
+  text-transform: uppercase; }
+
+.header--big, .header--shaded {
+  font-weight: 900;
+  font-size: 130px; }
+
+.header--shaded {
+  opacity: .3; }
+
+.header--medium {
+  font-weight: 700;
+  font-size: 56px; }
+
+.header--small {
+  font-weight: 700;
+  font-size: 18px; }
+
+.subheader {
+  font-family: "Open sans";
+  font-size: 16px; }
+
+.subheader--small {
+  text-transform: uppercase;
+  font-size: 14px; }
+
+.paragraph {
+  font-size: 14px;
+  font-family: "Open sans";
+  font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */

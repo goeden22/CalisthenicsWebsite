@@ -1,0 +1,43 @@
+$primary_color: #ffffff;
+$primary_bg: #eeeeee;
+$reversed_color: #000000;
+$reversed_bg: #030303;
+$reversed_muted: #42413f;
+$secondary_color:#c69b6e;
+
+$header_font: 'Montserrat';
+$paragraph_font: 'Open sans';
+
+.header{
+    font-family: $header_font;
+    text-transform: uppercase;
+}
+.header--big{
+font-weight: 900;
+font-size:130px;
+}
+.header--shaded{
+    @extend .header--big;
+    opacity: .3;
+}
+.header--medium{
+    font-weight: 700;
+    font-size:56px;
+}
+.header--small{
+    font-weight: 700;
+    font-size:18px;
+}
+.subheader{
+    font-family: $paragraph_font;
+    font-size: 16px;
+}
+.subheader--small{
+    text-transform: uppercase;
+    font-size:14px;
+}
+.paragraph{
+    font-size: 14px;
+    font-family: $paragraph_font;
+    font-weight:400;
+}
