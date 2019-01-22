@@ -1,3 +1,10 @@
+/*NORMALIZE*/
+body,html,ul{
+    margin: 0;
+    padding:0;
+}
+/*TYPOGRAPHY*/
+
 $primary_color: #ffffff;
 $primary_bg: #eeeeee;
 $reversed_color: #000000;
@@ -15,11 +22,10 @@ $paragraph_font: 'Open sans';
 .header--big{
 font-weight: 900;
 font-size:130px;
+position: relative;
+z-index:2;
 }
-.header--shaded{
-    @extend .header--big;
-    opacity: .3;
-}
+
 .header--medium{
     font-weight: 700;
     font-size:56px;
@@ -28,9 +34,15 @@ font-size:130px;
     font-weight: 700;
     font-size:18px;
 }
+.header--xsmall{
+    font-weight: 700;
+    font-size:14px;
+}
 .subheader{
     font-family: $paragraph_font;
-    font-size: 16px;
+    font-size: 18px;
+    margin: 10px 0;
+    font-weight: 700;
 }
 .subheader--small{
     text-transform: uppercase;
@@ -40,4 +52,66 @@ font-size:130px;
     font-size: 14px;
     font-family: $paragraph_font;
     font-weight:400;
+}
+/*MAIN*/
+.landing{
+    background-image: url('./img/main-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color:$primary_color;
+    box-sizing: border-box;
+    
+    .topbar{
+        padding-top:20px;
+    }
+}
+.hero{
+    &__header{
+        display: block;
+        width:100%;
+        text-align: center;
+        padding-top:20vh;
+    }   
+    hr{
+        background-color:$secondary_color;
+        width:100px;
+        height: 5px;
+        margin:0 auto
+    }
+    &__subheader{
+        text-align: center;
+    }
+    &__arrow{
+        margin-top:100px;
+        width:50px;
+        height:50px;
+        fill:$secondary_color;
+        padding: 15px;
+        background-color: #11111156;
+        border: 1px solid rgba(255, 255, 255, 0.76);
+        cursor:pointer;
+        &:hover{
+            background-color: #ffffff36
+        }
+    }
+}
+.menu{
+    list-style-type: none;
+
+    &__element{
+        display: inline-block;
+        padding: 7px 10px;
+        margin-right: 8px;
+        cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.76) transparent;
+
+        &:hover{
+            color:$secondary_color;
+            background-color: #11111156;
+        border: 1px solid rgba(255, 255, 255, 0.76);
+        padding: 6px 9px;
+        }
+    }
 }
