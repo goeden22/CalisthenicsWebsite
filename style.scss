@@ -50,6 +50,9 @@ z-index:2;
     font-weight: 700;
     font-size:14px;
 }
+.header--alt{
+    color: $secondary_color;
+}
 .subheader{
     font-family: $paragraph_font;
     font-size: 16px;
@@ -70,6 +73,9 @@ z-index:2;
     font-size: 14px;
     font-family: $paragraph_font;
     font-weight:400;
+    &--muted{
+        color: $primary_muted;
+    }
 }
 .sectionheader{
     display:block;
@@ -146,10 +152,11 @@ height: 20%
 }
 /*Timeline*/
 .history{
-    height: 1000px;
+   
 }
 .storyline{
-    height: 80%;
+    
+    height: 800px;
     &__column{
         display:flex;
         flex-direction: column;
@@ -170,6 +177,8 @@ height: 20%
         text-align: center;
         padding: 2px 20px;
         display: block;
+        margin-bottom: 50px;
+     
         h2 {
             background-color: $secondary_color;
             display: inline-block;
@@ -226,5 +235,32 @@ height: 20%
     }
     &--double{
         flex:2
+    }
+}
+//excersises
+.excersises{
+    background-color:$reversed_bg;
+    color:$primary_color;
+}
+.gallery{
+    width:1275px;
+    margin: 0 auto;
+    &__window{
+        overflow: hidden;
+    }
+    &__container{
+        width:2400px;
+        display: flex;
+    }
+    &__tile{
+        margin: 0 25px;
+        
+        width:383px;
+        box-sizing:border-box;
+        padding: 20px;
+        border: 1px solid $reversed_muted
+    }
+    &__sub{
+        padding-top: 15px
     }
 }

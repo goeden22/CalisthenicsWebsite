@@ -35,6 +35,9 @@ h2 {
   font-weight: 700;
   font-size: 14px; }
 
+.header--alt {
+  color: #c69b6e; }
+
 .subheader {
   font-family: "Open sans";
   font-size: 16px;
@@ -55,6 +58,8 @@ h2 {
   font-size: 14px;
   font-family: "Open sans";
   font-weight: 400; }
+  .paragraph--muted {
+    color: #cccccc; }
 
 .sectionheader {
   display: block;
@@ -117,11 +122,8 @@ h2 {
       padding: 6px 9px; }
 
 /*Timeline*/
-.history {
-  height: 1000px; }
-
 .storyline {
-  height: 80%; }
+  height: 800px; }
   .storyline__column {
     display: flex;
     flex-direction: column;
@@ -136,7 +138,8 @@ h2 {
     color: #ffffff;
     text-align: center;
     padding: 2px 20px;
-    display: block; }
+    display: block;
+    margin-bottom: 50px; }
     .storyline__button h2 {
       background-color: #c69b6e;
       display: inline-block;
@@ -177,5 +180,26 @@ h2 {
   margin: 0; }
 .timeline--double {
   flex: 2; }
+
+.excersises {
+  background-color: #030303;
+  color: #ffffff; }
+
+.gallery {
+  width: 1275px;
+  margin: 0 auto; }
+  .gallery__window {
+    overflow: hidden; }
+  .gallery__container {
+    width: 2400px;
+    display: flex; }
+  .gallery__tile {
+    margin: 0 25px;
+    width: 383px;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #42413f; }
+  .gallery__sub {
+    padding-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */
