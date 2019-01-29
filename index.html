@@ -123,7 +123,7 @@
         </div>
         <div class="gallery">
             <div class="gallery__window">
-                <div class="gallery__container">
+                <div class="gallery__container" id="galleryContainer">
                     <div class="gallery__tile">
                         <img src="./img/excersise1.jpg" alt="" class="gallery__img">
                         <div class="gallery__sub">
@@ -167,163 +167,172 @@
                 </div>
             </div>
             <div class="gallery__controls">
-                <div class="gallery__arrows">
-                    <img src="./img/left-arrow.svg" alt="">
-                    <img src="./img/right-arrow.svg" alt="">
+                <div class="gallery__arrows" id="galleryArrows">
+                    <img src="./img/left-arrow.svg"  class="gallery__arrow"alt="" name="left">
+                    <img src="./img/right-arrow.svg" class="gallery__arrow" alt="" name="right">
                 </div>
-                <div class="gallery__counter">
-                    <div class="gallery__dot"></div>
-                    <div class="gallery__dot"></div>
-                    <div class="gallery__dot"></div>
+                <div class="gallery__counter" id="galleryCounter">
+                    <div class="gallery__dot dot--active"></div>
                     <div class="gallery__dot"></div>
                     <div class="gallery__dot"></div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="services container">
+        <div class="row sectionheader">
+            <h1 class="header header--medium">Services</h1>
+            <h2 class="subheader">What we can offer you</h2>
         </div>
-        <div class="services container">
-            <div class="row sectionheader">
-                <h1 class="header header--medium">Services</h1>
-                <h2 class="subheader">What we can offer you</h2>
-            </div>
-            <div class="row">
+        <div class="row">
             <div class="services__tile col-lg-4">
                 <img src="./img/gym.svg" alt="" class="services__img">
                 <h1 class="header header--small">Training programs</h1>
-                <p class="paragraph">We offer individual training programs, suited for your goals, and crafted personaly, considering your advancement level, equipment, and time that you can spend on training.
-                    Our experience will help You achieve yoar goals, get better physique and teach you how to perform advanced calisthenic excersises.
+                <p class="paragraph">We offer individual training programs, suited for your goals, and crafted personaly, considering your advancement
+                    level, equipment, and time that you can spend on training. Our experience will help You achieve yoar
+                    goals, get better physique and teach you how to perform advanced calisthenic excersises.
                 </p>
             </div>
             <div class="services__tile col-lg-4">
                 <img src="./img/proteins.svg" alt="" class="services__img">
                 <h1 class="header header--small">Diet plans</h1>
-                <p class="paragraph">Diet is the key to achieving your dream pshysique and better results, but we believe that it can also be easy, cheap and delicious. We can offer you solutions to manage Your nutririon,
-                    and suit it to your needs and fitness goals.
+                <p class="paragraph">Diet is the key to achieving your dream pshysique and better results, but we believe that it can also be
+                    easy, cheap and delicious. We can offer you solutions to manage Your nutririon, and suit it to your needs
+                    and fitness goals.
                 </p>
             </div>
             <div class="services__tile col-lg-4">
                 <img src="./img/medi.svg" alt="" class="services__img">
                 <h1 class="header header--small">Motivation and mindset</h1>
-                <p class="paragraph">Motivation, discipline and consistency makes greatness. Working on yourself can be a great journey. You need to know how to rest and keep that inner flame burning. We offer You our guidance, experience and mentoring
+                <p class="paragraph">Motivation, discipline and consistency makes greatness. Working on yourself can be a great journey. You need
+                    to know how to rest and keep that inner flame burning. We offer You our guidance, experience and mentoring
                     to help you achieve your goals
                 </p>
             </div>
         </div>
+    </div>
+    <div class="pricing container">
+        <div class="row sectionheader">
+            <h1 class="header header--medium">Pricing</h1>
+            <h2 class="subheader">Choose the best deal from our broad offer</h2>
         </div>
-        <div class="pricing container">
-            <div class="row sectionheader">
-                <h1 class="header header--medium">Pricing</h1>
-                <h2 class="subheader">Choose the best deal from our broad offer</h2>
+        <div class="pricing__container">
+            <div class="pricing__tile">
+                <h1 class="header header--small">Basic</h1>
+                <h1 class="header header--pricing ">10 $</h1>
+                <h2 class="subheader--small">monthly</h2>
+                <hr class="separator separator--muted">
+                <ul class="pricing__list">
+                    <li class="paragraph paragraph--bold">Excersise plan</li>
+                    <li class="paragraph paragraph--bold">Premium website content</li>
+                    <li class="paragraph paragraph--bold">Access to private group</li>
+                </ul>
+                <div class="pricing__button">
+                    <h2 class="header header--xsmall">Read more</h2>
+                </div>
+
             </div>
-            <div class="pricing__container">
-                <div class="pricing__tile">
-                    <h1 class="header header--small">Basic</h1>
-                        <h1 class="header header--pricing ">10 $</h1>
-                        <h2 class="subheader--small">monthly</h2>
-                        <hr class="separator separator--muted">
-                        <ul class="pricing__list">
-                        <li class="paragraph paragraph--bold">Excersise plan</li>
-                        <li class="paragraph paragraph--bold">Premium website content</li>
-                        <li class="paragraph paragraph--bold">Access to private group</li>
-                        </ul>
-                        <div class="pricing__button">
-            <h2 class="header header--xsmall">Read more</h2>
-        </div>
-                    
+            <div class="pricing__tile">
+                <h1 class="header header--small">Premium</h1>
+                <h1 class="header header--pricing ">15 $</h1>
+                <h2 class="subheader--small">monthly</h2>
+                <hr class="separator separator--muted">
+                <ul class="pricing__list">
+                    <li class="paragraph paragraph--bold">Excersise plan</li>
+                    <li class="paragraph paragraph--bold">Premium content</li>
+                    <li class="paragraph paragraph--bold">Dieting plan</li>
+                    <li class="paragraph paragraph--bold">Access to private group</li>
+                </ul>
+                <div class="pricing__button">
+                    <h2 class="header header--xsmall">Read more</h2>
                 </div>
-                <div class="pricing__tile">
-                    <h1 class="header header--small">Premium</h1>
-                        <h1 class="header header--pricing ">15 $</h1>
-                        <h2 class="subheader--small">monthly</h2>
-                        <hr class="separator separator--muted">
-                        <ul class="pricing__list">
-                        <li class="paragraph paragraph--bold">Excersise plan</li>
-                        <li class="paragraph paragraph--bold">Premium content</li>
-                        <li class="paragraph paragraph--bold">Dieting plan</li>
-                        <li class="paragraph paragraph--bold">Access to private group</li>
-                        </ul>
-                        <div class="pricing__button">
-            <h2 class="header header--xsmall">Read more</h2>
-        </div>
-                    
-                </div>
-                
-                <div class="pricing__tile">
-                    <h1 class="header header--small">Pro</h1>
-                        <h1 class="header header--pricing ">30 $</h1>
-                        <h2 class="subheader--small">monthly</h2>
-                        <hr class="separator separator--muted">
-                        <ul class="pricing__list">
-                        <li class="paragraph paragraph--bold">Excersise plan</li>
-                        <li class="paragraph paragraph--bold">Premium content</li>
-                        <li class="paragraph paragraph--bold">Dieting plan</li>
-                        <li class="paragraph paragraph--bold">Access to private group</li>
-                        <li class="paragraph paragraph--bold">Accesories pack</li>
-                        <li class="paragraph paragraph--bold">One hour online-mentoring per month</li>
-                        </ul>
-                        <div class="pricing__button">
-            <h2 class="header header--xsmall">Read more</h2>
-        </div>
-                    
-                </div>
-                
-                <div class="pricing__tile">
-                    <h1 class="header header--small">VIP</h1>
-                    
-                        <h1 class="header header--pricing ">50$</h1>
-                        <h2 class="subheader--small">monthly</h2>
-                        <hr class="separator separator--muted">
-                        <ul class="pricing__list">
-                        <li class="paragraph paragraph--bold">Excersise plan</li>
-                        <li class="paragraph paragraph--bold">Premium content</li>
-                        <li class="paragraph paragraph--bold">Dieting plan</li>
-                        <li class="paragraph paragraph--bold">Access to private group</li>
-                        <li class="paragraph paragraph--bold">Accesories pack</li>
-                        <li class="paragraph paragraph--bold">Three hours online-mentoring per month</li>
-                        <li class="paragraph paragraph--bold">Early access to premium content</li>
-                        </ul>
-                        <div class="pricing__button">
-            <h2 class="header header--xsmall">Read more</h2>
-        </div>
-                    
-                </div>
-                
-                
-                
+
             </div>
-        </div>
-        <div class="video">
-            <video class="video__movie" src="./video/video.mp4" autoplay muted loop></video>
-            <div class="video__tag">
-                <h1 class="header header--medium">Every rep counts</h1>
-            </div>
-        </div>
-        <div class="contact">
-                <div class="row sectionheader">
-                        <h1 class="header header--medium">Contact</h1>
-                        <h2 class="subheader">Send us a message.</h2>
-                    </div>
-            <form action="" class="contactform container">
-                <div class="contactform__inputs">
-                    <input type="text" class="contactform__input input--primary" placeholder="your name">
-                    <input type="text" class="contactform__input input--primary" placeholder="your email">
-                    <input type="text" class="contactform__input input--primary" placeholder="your phone(optional)">
+
+            <div class="pricing__tile">
+                <h1 class="header header--small">Pro</h1>
+                <h1 class="header header--pricing ">30 $</h1>
+                <h2 class="subheader--small">monthly</h2>
+                <hr class="separator separator--muted">
+                <ul class="pricing__list">
+                    <li class="paragraph paragraph--bold">Excersise plan</li>
+                    <li class="paragraph paragraph--bold">Premium content</li>
+                    <li class="paragraph paragraph--bold">Dieting plan</li>
+                    <li class="paragraph paragraph--bold">Access to private group</li>
+                    <li class="paragraph paragraph--bold">Accesories pack</li>
+                    <li class="paragraph paragraph--bold">One hour online-mentoring per month</li>
+                </ul>
+                <div class="pricing__button">
+                    <h2 class="header header--xsmall">Read more</h2>
                 </div>
-                <input type="textarea" class="contactform__message input--primary" placeholder="your message">
-                <input type="submit" class="contactform__submit" placeholder="submit">
-            </form>
+
+            </div>
+
+            <div class="pricing__tile">
+                <h1 class="header header--small">VIP</h1>
+
+                <h1 class="header header--pricing ">50 $</h1>
+                <h2 class="subheader--small">monthly</h2>
+                <hr class="separator separator--muted">
+                <ul class="pricing__list">
+                    <li class="paragraph paragraph--bold">Excersise plan</li>
+                    <li class="paragraph paragraph--bold">Premium content</li>
+                    <li class="paragraph paragraph--bold">Dieting plan</li>
+                    <li class="paragraph paragraph--bold">Access to private group</li>
+                    <li class="paragraph paragraph--bold">Accesories pack</li>
+                    <li class="paragraph paragraph--bold">Three hours online-mentoring per month</li>
+                    <li class="paragraph paragraph--bold">Early access to premium content</li>
+                </ul>
+                <div class="pricing__button">
+                    <h2 class="header header--xsmall">Read more</h2>
+                </div>
+
+            </div>
+
+
 
         </div>
-        <div class="footer">
-            <div class="footer__credits">Designed by Stefan Parnarov</div>
-            <div class="footer__social">
-                <img src="" alt="" class="footer__icon">
-                <img src="" alt="" class="footer__icon">
-                <img src="" alt="" class="footer__icon">
-                <img src="" alt="" class="footer__icon">
-            </div>
+    </div>
+    <div class="video">
+        <video class="video__movie" src="./video/video.mp4" autoplay muted loop></video>
+        <div class="video__tag">
+            <h1 class="header header--medium">Every rep counts</h1>
         </div>
     </div>
+    <div class="contact">
+        <div class="row sectionheader">
+            <h1 class="header header--medium">Contact</h1>
+            <h2 class="subheader">Send us a message.</h2>
+        </div>
+        <form action="" class="contactform container">
+            <div class="contactform__inputs">
+                <input type="text" class="contactform__input input--primary" placeholder="your name">
+                <input type="text" class="contactform__input input--primary" placeholder="your email">
+                <input type="text" class="contactform__input input--primary" placeholder="your phone(optional)">
+            </div>
+            <textarea class="contactform__message input--primary" placeholder="your message"></textarea>
+            <div class="contactform__submit">
+                <h2 class="header header--xsmall">Submit</h2>
+            </div>
+        </form>
+
+    </div>
+    <div class="footer">
+        <div class="footer__container container">
+        <div class="footer__credits">
+            <h2 class="header header--xsmall xsmall--padding">Desined by Stefan Paranov and Aleksander Pilarski</h2>
+            <h2 class="header header--xsmall xsmall--padding">Developed by Aleksander Pilarski</h2>
+        </div>
+        <div class="footer__social">
+            <img src="./img/facebook.svg" alt="" class="footer__icon">
+            <img src="./img/instagram.svg" alt="" class="footer__icon">
+            <img src="./img/snapchat.svg" alt="" class="footer__icon">
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="script/jquery.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

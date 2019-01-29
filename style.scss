@@ -13,6 +13,42 @@ body,html,ul{
 h2{
     margin:0;
 }
+
+/*MIXINS*/
+@mixin placeholder($color, $font,$font-size, $font-weight, $text-transform,$opacity){
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: $color;
+        font-size:$font-size;
+        font-family: $font;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        opacity:$opacity
+      }
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: $color;
+        font-size:$font-size;
+        font-family: $font;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        opacity:$opacity
+      }
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: $color;
+        font-size:$font-size;
+        font-family: $font;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        opacity:$opacity
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+        color: $color;
+        font-size:$font-size;
+        font-family: $font;
+        font-weight: $font-weight;
+        text-transform: $text-transform;
+        opacity:$opacity
+      }
+}
 /*TYPOGRAPHY*/
 
 $primary_color: #ffffff;
@@ -115,6 +151,13 @@ z-index:2;
 .input--primary{
     background-color: $primary_bg;
     border: 1px solid $primary_muted;
+    color:$reversed_bg;
+    margin-bottom:50px;
+    padding:10px;
+    @include placeholder($reversed_bg,$paragraph_font, 14px,400,uppercase,1)
+}
+.xsmall--padding{
+    padding: 6px 0;
 }
 /*MAIN*/
 .landing{
@@ -282,13 +325,15 @@ height: 20%
         overflow: hidden;
     }
     &__container{
-        width:2400px;
         display: flex;
+        margin: 1px 0;
+        -webkit-transition: transform 500ms ease-out;
+    -moz-transition: transform 500ms ease-out;
+    -o-transition: transform 500ms ease-out;
+    transition: transform 500ms ease-out;
     }
     &__tile{
         margin: 0 25px;
-        
-        width:383px;
         box-sizing:border-box;
         padding: 20px;
         border: 1px solid $reversed_muted
@@ -413,11 +458,46 @@ height: 20%
     }
     &__input{
         width: 30%;
-        padding:5px;
     }
     &__message{
         display: inline-block;
         width: 100%;
+        height: 200px;
     }
-    
+    &__submit{
+        @extend .storyline__button;
+        h2{
+            padding: 12px 50px;
+            background-color:$reversed_muted;
+        }
+    }
+}
+.footer{
+    background-color: $reversed_bg;
+    color:$primary_color;
+    box-sizing: border-box;
+    &__credits{
+        box-sizing: border-box;
+        padding: 50px 0;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }&__icon{
+        fill:$secondary_color;
+        height: 75px;
+        width: 75px;
+        padding:15px;
+        border: 1px solid $primary_color;
+        margin: 0 12px;
+        cursor: pointer;
+        &:hover{
+            background-color: $reversed_muted;
+        }
+    }
+    &__social{
+        display: flex;
+        align-items: center;
+        
+    }
 }
