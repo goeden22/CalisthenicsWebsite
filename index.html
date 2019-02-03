@@ -15,35 +15,35 @@
 </head>
 
 <body>
-    <div class="landing">
-        <div class="topbar row">
-            <div class="main-logo col-sm-3">
+    <div class="landing" id="home">
+        <div class="topbar">
+            <div class="main-logo">
                 <img src="./img/logo.png" alt="" class="main-logo__img">
             </div>
-            <div class="menu col-sm-9 col-xs-12">
-                <div class="menu__mobile">
+            <div class="menu">
+                <div class="menu__mobile" id="mobileMenu">
                     <img src="./img/list.svg" alt="" class="menu__mobileIcon">
-                    <ul class="menu__mobileList">
-                        <li class="menu__mobileElement header header--small">Home</li>
+                    <ul class="menu__mobileList menu__mobileList--hidden" id="mobileNav">
+                        <li class="menu__mobileElement header header--small" name="home">Home</li>
                         <hr>
-                        <li class="menu__mobileElement header header--small">About</li>
+                        <li class="menu__mobileElement header header--small" name="about">About</li>
                         <hr>
-                        <li class="menu__mobileElement header header--small">Excersises</li>
+                        <li class="menu__mobileElement header header--small" name="excersises">Excersises</li>
                         <hr>
-                        <li class="menu__mobileElement header header--small">Services</li>
+                        <li class="menu__mobileElement header header--small" name="services">Services</li>
                         <hr>
-                        <li class="menu__mobileElement header header--small">Premium</li>
+                        <li class="menu__mobileElement header header--small" name="premium">Premium</li>
                         <hr>
-                        <li class="menu__mobileElement header header--small">Contact</li>
+                        <li class="menu__mobileElement header header--small" name="contact">Contact</li>
                     </ul>
                 </div>
-                <ul class="menu__list">
-                    <li class="menu__element header header--xsmall">Home</li>
-                    <li class="menu__element header header--xsmall">About</li>
-                    <li class="menu__element header header--xsmall">Excersises</li>
-                    <li class="menu__element header header--xsmall">Services</li>
-                    <li class="menu__element header header--xsmall">Premium</li>
-                    <li class="menu__element header header--xsmall">Contact</li>
+                <ul class="menu__list" id="nav">
+                    <li class="menu__element header header--xsmall" name ="home">Home</li>
+                    <li class="menu__element header header--xsmall" name ="about">About</li>
+                    <li class="menu__element header header--xsmall" name ="excersises">Excersises</li>
+                    <li class="menu__element header header--xsmall" name ="services">Services</li>
+                    <li class="menu__element header header--xsmall" name ="premium">Premium</li>
+                    <li class="menu__element header header--xsmall" name ="contact">Contact</li>
                 </ul>
             </div>
         </div>
@@ -55,7 +55,7 @@
                     <h2 class="subheader subheader subheader--hero">Your guide to bodyweight training</h2>
                 </div>
 
-                <div class="hero__icon">
+                <div class="hero__icon" id="button">
                     <img src="./img/arrow.svg" alt="" class="hero__arrow">
                 </div>
             </div>
@@ -64,7 +64,7 @@
         </div>
     </div>
 
-    <div class="history ">
+    <div class="history" id="about">
         <div class="row sectionheader">
             <h1 class="header header--medium">Story</h1>
             <h2 class="subheader">How it all started.</h2>
@@ -132,7 +132,7 @@
 
 
         </div>
-        <div class="storyline__mobile storyline--right col-xs-">
+        <div class="storyline__mobile storyline--right">
             <div class="timeline__mobile storyline__column">
 
                 <div class="timeline__dates">
@@ -196,7 +196,7 @@
     </div>
 
 
-    <div class="excersises row">
+    <div class="excersises row" id="excersises">
         <div class="row sectionheader">
             <h1 class="header header--medium">Excercises</h1>
             <h2 class="subheader">Get in the world of calisthenics</h2>
@@ -257,7 +257,7 @@
             </div>
         </div>
     </div>
-    <div class="services container">
+    <div class="services container" id="services">
         <div class="row sectionheader">
             <h1 class="header header--medium">Services</h1>
             <h2 class="subheader">What we can offer you</h2>
@@ -292,7 +292,7 @@
             </div>
         </div>
     </div>
-    <div class="pricing">
+    <div class="pricing" id="premium">
         <div class="row sectionheader">
             <h1 class="header header--medium">Pricing</h1>
             <h2 class="subheader">Choose the best deal from our broad offer</h2>
@@ -380,7 +380,7 @@
             <h1 class="header header--medium">Every rep <br> counts</h1>
         </div>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="row sectionheader">
             <h1 class="header header--medium">Contact</h1>
             <h2 class="subheader">Send us a message.</h2>
@@ -412,7 +412,10 @@
         </div>
     </div>
     </div>
-    <script src="script/jquery.js"></script>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
 

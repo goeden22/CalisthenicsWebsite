@@ -69,7 +69,44 @@ function Gallery(id,arrows,counter) {
     //wywołujemy metode przy tworzeniu każdej nowej galerii
 }
 
-let gal = new Gallery('galleryContainer', 'galleryArrows','galleryCounter')
+function MobileMenu(id, mobile){
+    this.menu = document.getElementById(id)
+    this.button = this.menu.querySelector('.menu__mobileIcon')
+    this.list = this.menu.querySelector('.menu__mobileList')
+    this.toggle = function(){
+        this.list.classList.toggle('menu__mobileList--active')
+        this.menu.classList.toggle('menu__mobile--active');
+        
+    
+    }
+    this.button.onclick = this.toggle.bind(this)
+}
 
+function Navigation(id){
+    this.nav = document.getElementById(id)
+    this.options = this.nav.querySelectorAll('li')
+    this.scroll = function(e){
+        let name = e.target.getAttribute('name')
+        if(!name){
+            return undefined
+        }
+        let scrollTarget = document.getElementById(name)
+        console.log(scrollTarget.offsetTop)
+        $("html, body").animate({ scrollTop: scrollTarget.offsetTop }, 600)
+    }
+    this.nav.onclick = this.scroll.bind(this)
+}
 
+function HeroButton(id){
+    this.button = document.getElementById(id)
+    this.button.onclick = function(){
+        let about = document.getElementById('about')
+        $("html, body").animate({ scrollTop: about.offsetTop }, 600)
+    }
+}
 
+let gal = new Gallery('galleryContainer', 'galleryArrows','galleryCounter');
+let mobileMenu = new MobileMenu('mobileMenu');
+let mobileNav = new Navigation('mobileNav')
+let desktopNav = new Navigation('nav', false)
+let heroButton = new HeroButton('button')

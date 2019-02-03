@@ -184,10 +184,12 @@ z-index:2;
     
     .topbar{
         box-sizing: border-box;
-        padding-top: $small_space;
+        padding: $small_space;
         height: 20%;
         max-width:1400px;
         margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
 
     }
 }
@@ -229,8 +231,9 @@ z-index:2;
     }
 }
 .main-logo{
+    width: 30%;
     &__img{
-        width: 200px;
+        width:200px;
         height: auto;
     }
 }
@@ -255,22 +258,34 @@ z-index:2;
     /*MOBILE*/
     &__mobile{
         display: none;
+        z-index:20;
+        right: 0;
+        position: fixed;
         &Icon{
             width: 60px;
             height: 60px;
             padding: $xsmall_space;
             border: 1px solid $reversed_muted;
+            background-color:$reversed_bg;
+            margin-right: $small_space;
             cursor: pointer;
         }
         &List{
+            -webkit-transition: transform 500ms ease-out;
+            -moz-transition: transform 500ms ease-out;
+            -o-transition: transform 500ms ease-out;
+            transition: transform 500ms ease-out;
+            transform: translateX(100%);
             background-color: $primary_bg;
             color: $reversed_bg;
             list-style-type: none;
-            width: 100%;
+            width: 100vw;
             position:absolute;
             right: 0;
             margin-top:15px;
-            z-index:10;
+            &--active{
+                transform: translateX(0);
+            }
             hr{
                 margin:0;
                 padding: 0;
@@ -281,20 +296,16 @@ z-index:2;
         }
     }
 }
-@media only screen and (max-width: 885px) {
+@media only screen and (max-width: 915px) {
     .main-logo {
       width:50%;
       display:inline-block;
     }
     .menu{
-        width: 50%;
+        width: 100%;
         display:inline-block;
         &__mobile{
             display: block;
-        }
-        &__mobileList{
-            width:100vw;
-            transform: translateX(100%)
         }
         &__list{
             display: none;
