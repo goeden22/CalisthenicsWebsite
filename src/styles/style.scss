@@ -74,6 +74,36 @@ $secondary_color-shaded:#d4aa7c;
 $header_font: 'Montserrat';
 $paragraph_font: 'Open sans';
 
+.loader{
+    opacity: 1;
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    text-align: center;
+    -webkit-transition: opacity 2s 2s ease-out;
+	-moz-transition: opacity 2s 2s ease-out;
+	-o-transition: opacity 2s 2s ease-out;
+	transition: opacity 2s 2s ease-out;
+    &__anim{
+        display: block;
+        padding: 5px 0;
+        height: 23px;
+        margin: 0 auto;
+    }
+    &--transparent{
+        opacity: 0;
+    }
+    &--invisible{
+        display: none
+    }
+}
+
 .header{
     font-family: $header_font;
     text-transform: uppercase;
@@ -83,6 +113,10 @@ font-weight: 900;
 font-size:130px;
 position: relative;
 z-index:2;
+}
+.header--loader{
+    font-weight: 900;
+    font-size: 45px;
 }
 
 .header--medium{

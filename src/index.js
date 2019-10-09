@@ -109,6 +109,29 @@ function HeroButton(id){
         let about = document.getElementById('about')
         $("html, body").animate({ scrollTop: about.offsetTop }, 600)
     }
+    this.trigger = () => {
+        document.addEventListener('load', () => {
+            alert('bla')
+            this.transparent();
+        })
+    this.trigger();
+    }
+}
+function Loader(id){
+    this.loader = document.getElementById(id);
+    this.transparent = () => { this.loader.classList.add('loader--transparent')}
+    this.invisible = () => {this.loader.classList.add('loader--invisible')}
+    this.trigger = () => {
+        window.addEventListener('load', () => {
+
+            this.transparent();
+            setTimeout(() => {
+                this.invisible();
+            },4000)
+        })
+    }
+    this.trigger();
+
 }
 
 let gal = new Gallery('galleryContainer', 'galleryArrows','galleryCounter');
@@ -116,3 +139,4 @@ let mobileMenu = new MobileMenu('mobileMenu');
 let mobileNav = new Navigation('mobileNav')
 let desktopNav = new Navigation('nav', false)
 let heroButton = new HeroButton('button')
+let loader = new Loader('loader')
